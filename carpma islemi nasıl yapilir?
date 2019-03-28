@@ -1,0 +1,19 @@
+//iki sayının çarpımı nasıl yapılır?
+#include <iostream>
+//using namespace std; satırı kullanılmazsa std::cout ya da std::cin yazmamız gerekir.
+
+int main()
+{
+	int sayi_1;
+	int sayi_2;
+	int carpim;
+	std::cout<<"Bir sayi giriniz:";
+	std::cin>>sayi_1;
+	std::cout<<"Bir sayi daha giriniz:";
+	std::cin>>sayi_2;
+	carpim=sayi_1*sayi_2;
+	std::cout<<"Girilen iki sayinin carpimi:";
+	std::cout<<carpim;
+	
+	return 0;
+}
