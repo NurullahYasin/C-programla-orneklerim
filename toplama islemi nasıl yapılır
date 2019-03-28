@@ -1,0 +1,20 @@
+//iki sayının toplamı nasıl yapılır?
+#include <iostream>
+//Bir kütüphane #include komutu ile programa dahil edilir.
+//iostream kütüphanesi giriş/çıkış (input/output) kütüphanesidir. 
+using namespace std;
+// using namespace std; kullanılarak her defasında std class'ın çağrılma zorunluluğu ortadan kaldırılır.
+//yani, using namespace std; satırı kullanılırsa std::cout ya da std::cin yazmak yerine sadece cout ve cin komutları kullanılır.
+
+int main()
+{
+	double sayi1,sayi2,toplam;
+	//doble yerine tam sayılar için olan int,double'den daha küçük sayilar için olan float da kullanılabilir.
+	cout<<"Toplanacak birinci sayiyi giriniz:"; cin>>sayi1;
+	cout<<"Toplanacak ikinci sayiyi giriniz:"; cin>>sayi2;
+	//sayi1 ve sayi2 yitek seferdede isteyebiliriz onun için tek bir satır yazıp toplanacak iki sayiyi gir dememiz yeterli
+	//iki sayiyi birden istemek için de--> cin>>sayi1>>sayi2 şeklinde yazmamız yeterli :)
+	toplam=sayi1+sayi2;
+	cout<<"Sayilarin toplami:"<<toplam<<endl;
+	return 0;
+}
