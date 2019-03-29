@@ -26,6 +26,7 @@ int main()
 			cout<<"Bolum sıfır olamaz, TANIMSIZDIR";
 			return 0; //program sonu
 		}
+	sonuc=sayi_1/sayi_2;
 	}
 	//kalan hesaplama(mod alma)
 	else if(islem=='%')
