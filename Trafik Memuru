@@ -1,0 +1,55 @@
+//Bir bilgisayar programı yardımıyla araçların hız limitlerine uyup uymadığı nasıl kontrol edilir.
+#include <iostream>
+//using namespace std; satırı kullanılmazsa std::cout ya da std::cin yazmamız gerekir.
+int main()
+{
+	int hiz;
+	char cins;
+	/*
+	azami hızlar:
+	otomobil için 120
+	otobüs için 90
+	kamyonet için 70 olsun
+	*/
+	std::cout<<"Aracin cinsini giriniz:";
+	std::cout<<std::endl;
+	std::cout<<"Otomobil:o, Otobus:t, Kamyonet:k ";
+	std::cin>>cins;
+	std::cout<<"Aracin hizini giriniz: ";
+	std::cin>>hiz;
+	
+	if(cins=='o')
+	{
+		std::cout<<"Arac Otomobildir";
+		std::cout<<std::endl;
+		if(hiz>120)
+		std::cout<<"Arac cezalidir";
+		else
+		std::cout<<"kurallara uygun";
+	}
+	
+	else if(cins=='t')
+	{
+		std::cout<<"Arac Otobustur";
+		std::cout<<std::endl;
+		if(hiz>90)
+		std::cout<<"Arac cezalidir";
+		else
+		std::cout<<"kurallara uygun";
+	}
+	
+	else if(cins=='k')
+	{
+		std::cout<<"Arac Kamyonettir";
+		std::cout<<std::endl;
+		if(hiz>70)
+		std::cout<<"Arac cezalidir";
+		else
+		std::cout<<"kurallara uygun";
+	}
+	else
+	std::cout<<"Arac cinsini yanlis girdiniz.";
+	
+	
+	return 0;
+}
