@@ -1,1 +1,42 @@
+//Hesap makinesi nasıl yapılır?
+#include <iostream>
+using namespace std;
 
+int main()
+{
+	int sayi_1, sayi_2,sonuc;
+	char islem;
+	//cahr veri tipine sadece bir karakter atanabilir ve bir byte yer kaplar.
+	cout<<"islem giriniz:"<<endl;
+	cin>>sayi_1>>islem>>sayi_2;
+	//toplama işlemi
+	if(islem=='+')
+	sonuc=sayi_1+sayi_2;
+	//çıkarma işlemi
+	else if(islem=='-')
+	sonuc=sayi_1-sayi_2;
+	//çarpma işlemi
+	else if(islem=='*')
+	sonuc=sayi_1*sayi_2;
+	//bölme işleminde payda sıfır olabileceğinden payda kontrolü yapılır
+	else if(islem=='/')
+	{
+		if(sayi_2==0)
+		{
+			cout<<"Bolum sıfır olamaz, TANIMSIZDIR";
+			return 0; //program sonu
+		}
+	}
+	//kalan hesaplama(mod alma)
+	else if(islem=='%')
+	sonuc=sayi_1%sayi_2;
+	else
+	{
+		cout<<"Yanlis islem girdiniz";
+		return 0;
+	}
+	cout<<"Sonuc:"<<endl;
+	cout<<sayi_1<<islem<<sayi_2<<"="<<sonuc;
+	
+	return 0;
+}
