@@ -1,0 +1,31 @@
+//bilgisayara nasıl sayı saydırırsın?
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sayi;
+	cout<<"Kaca kadar saymami istersin:"; cin>>sayi;
+	
+	/* while kullanımı
+	while(koşul)
+	{
+		//işlemler
+    }
+    */
+    int i=1;
+    while(i<=sayi)
+    {
+    	cout<<i<<"\t"; // \t sayesinde her sayı araasında bir tab boşluk olacak
+		++i; 
+	}
+	i=1;
+	int j;
+	j=++i;
+	cout<<"i="<<i<<"\t"<<"j="<<j<<endl;
+	i=1;
+	j=i++;
+	cout<<"i="<<i<<"\t"<<"j="<<j<<endl;
+	return 0;
+	
+}
